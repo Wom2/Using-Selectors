@@ -9,4 +9,12 @@ describe('My Key Press application', () => {
         await expect(KeyPressesPage.keyPressResult).toHaveTextContaining(
             'You entered: C');
     });
+    it('should display what is entered into the input', async () => {
+        await KeyPressesPage.open();
+
+        await KeyPressesPage.pressAkey('5');
+
+        await expect(KeyPressesPage.keyPressResult).toHaveTextContaining(
+            'You entered: 5');
+    });
 });

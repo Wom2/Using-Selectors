@@ -1,0 +1,1 @@
+import JavaAlertsPage from '../pageobjects/java_alert.page.js';
